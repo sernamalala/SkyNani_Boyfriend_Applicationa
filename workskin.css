@@ -1,0 +1,3011 @@
+/* worlds_end_valentine WhatsApp workskin (provided tutorial) */
+#workskin .screenreader {
+      position: absolute;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    #workskin ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    #workskin ::-webkit-scrollbar-track {
+      background: none;
+    }
+
+    #workskin ::-webkit-scrollbar-thumb {
+      background: rgba(0,0,0,0.5);
+      border-radius: 10px;
+    }
+
+    #workskin ::-webkit-scrollbar-thumb:hover {
+      background: rgba(0,0,0,0.7);
+      border-radius: 10px;
+    }
+
+    #workskin p {
+      line-height: 1.2em;
+    }
+
+    #workskin audio::-webkit-media-controls-play-button {
+      height: 80px;
+    }
+
+    #workskin .wpp {
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      width: 330px;
+      margin: 0 auto;
+      position: relative;
+      float: center;
+      overflow: hidden;
+    }
+
+    #workskin .wpp .emoji1 {
+      font-size: 60px;
+      line-height: 58px;
+      display: inline-block;
+      margin-left: -8px;
+      margin-right: -15px;
+    }
+
+    #workskin .wpp .emoji2 {
+      font-size: 20px;
+      line-height: 19px;
+    }
+
+    #workskin .wpp .light .time {
+      font-size: 0.75em;
+      color: #999;
+      display: inline-block;
+      float: right;
+      line-height: 1.3em;
+      padding-top: 0.5em;
+      padding-left: 1.5em;
+      margin: 0;
+    }
+
+    #workskin .wpp .dark .time {
+      font-size: 0.75em;
+      color: #8595A0;
+      display: inline-block;
+      float: right;
+      line-height: 1.3em;
+      padding-top: 0.5em;
+      padding-left: 1.5em;
+      margin: 0;
+    }
+
+    #workskin .wpp .light .timeemoji {
+      font-size: 0.75em;
+      color: #999;
+      display: inline-block;
+      margin-left: 5px;
+    }
+
+    #workskin .wpp .dark .timeemoji {
+      font-size: 0.75em;
+      color: #8595A0;
+      display: inline-block;
+      margin-left: 5px;
+    }
+
+    #workskin .wpp .timemedia {
+      font-size: 0.75em;
+      color: #ffffff;
+      display: inline-block;
+      float: right;
+      line-height: 1.3em;
+      padding-top: 0.5em;
+      padding-left: 1.1em;
+      margin: 0;
+      margin-top: -24px;
+      z-index: 3;
+      right: 10px;
+      position: relative;
+    }
+
+    #workskin .wpp .media {
+      border-radius: 5px;
+      width: 100%;
+      display: block;
+      z-index: 1;
+      margin-top: -2px;
+    }
+
+    #workskin .wpp .info {
+      font-size: 0.75rem;
+      width: 100%;
+      margin: 10px auto;
+      margin-bottom: -13px;
+      text-align: center;
+      display: inline-block;
+      line-height: 1.3;
+    }
+
+    #workskin .wpp .sent audio {
+      opacity: 0;
+      border-radius: 7px;
+      width: 100px;
+      z-index: 6;
+      position: absolute;
+      margin-left: -68px;
+      margin-top: -29px;
+    }
+
+    #workskin .wpp .received audio {
+      opacity: 0;
+      border-radius: 7px;
+      width: 100px;
+      z-index: 6;
+      position: absolute;
+      margin-left: -188px;
+      margin-top: -29px;
+    }
+
+    #workskin .wpp .voicemessagesent {
+      width: 95%;
+      display: block;
+      z-index: 5;
+      margin-top: 7px;
+      margin-left: 13px;
+      position: relative;
+      margin-bottom: -15px;
+    }
+
+    #workskin .wpp .voicemessagereceived {
+      width: 95%;
+      display: block;
+      z-index: 5;
+      margin-top: 7px;
+      margin-left: -5px;
+      position: relative;
+      margin-bottom: -15px;
+    }
+
+    #workskin .wpp .sent .icon {
+      border-radius: 50%;
+      width: 42px;
+      height: 42px;
+      overflow: hidden;
+      position: absolute;
+      z-index: 1;
+      top: 8px;
+      margin-left: -5px;
+      display: block;
+    }
+
+    #workskin .wpp .received .icon {
+      border-radius: 50%;
+      width: 42px;
+      height: 42px;
+      overflow: hidden;
+      position: absolute;
+      z-index: 1;
+      top: 8px;
+      margin-left: 197px;
+      display: block;
+    }
+
+    #workskin .wpp .light .voicetimersent {
+      font-size: 0.75em;
+      color: #999;
+      display: inline-block;
+      margin-left: 86px;
+    }
+
+    #workskin .wpp .light .voicetimerreceived {
+      font-size: 0.75em;
+      color: #999;
+      display: inline-block;
+      margin-left: 37px;
+    }
+
+    #workskin .wpp .dark .voicetimersent {
+      font-size: 0.75em;
+      color: #8595A0;
+      display: inline-block;
+      margin-left: 86px;
+    }
+
+    #workskin .wpp .dark .voicetimerreceived {
+      font-size: 0.75em;
+      color: #8595A0;
+      display: inline-block;
+      margin-left: 37px;
+    }
+
+    #workskin .wpp .dark .time2 {
+      font-size: 0.75em;
+      color: #8595A0;
+      display: inline-block;
+      margin-left: 92px;
+    }
+
+    #workskin .wpp .light .time2 {
+      font-size: 0.75em;
+      color: #999;
+      display: inline-block;
+      margin-left: 92px;
+    }
+
+    #workskin .wpp .fromgreen1 {
+      color: #06CF9C;
+      font-weight: bold;
+      font-size: 0.85rem;
+      line-height: 24px;
+    }
+
+    #workskin .wpp .fromgreen2 {
+      color: #02A698;
+      font-weight: bold;
+      font-size: 0.85rem;
+      line-height: 24px;
+    }
+
+    #workskin .wpp .fromgreen3 {
+      color: #3DB46C;
+      font-weight: bold;
+      font-size: 0.85rem;
+      line-height: 24px;
+    }
+
+    #workskin .wpp .fromgreen4 {
+      color: #25D366;
+      font-weight: bold;
+      font-size: 0.85rem;
+      line-height: 24px;
+    }
+
+    #workskin .wpp .fromgreen5 {
+      color: #A5B337;
+      font-weight: bold;
+      font-size: 0.85rem;
+      line-height: 24px;
+    }
+
+    #workskin .wpp .fromyellow {
+      color: #FFBC38;
+      font-weight: bold;
+      font-size: 0.85rem;
+      line-height: 24px;
+    }
+
+    #workskin .wpp .frombrown1 {
+      color: #B4876E;
+      font-weight: bold;
+      font-size: 0.85rem;
+      line-height: 24px;
+    }
+
+    #workskin .wpp .frombrown2 {
+      color: #C4532D;
+      font-weight: bold;
+      font-size: 0.85rem;
+      line-height: 24px;
+    }
+
+    #workskin .wpp .fromred {
+      color: #EB2837;
+      font-weight: bold;
+      font-size: 0.85rem;
+      line-height: 24px;
+    }
+
+    #workskin .wpp .frompink1 {
+      color: #FF2E74;
+      font-weight: bold;
+      font-size: 0.85rem;
+      line-height: 24px;
+    }
+
+    #workskin .wpp .frompink2 {
+      color: #E542A3;
+      font-weight: bold;
+      font-size: 0.85rem;
+      line-height: 24px;
+    }
+
+    #workskin .wpp .frompurple1 {
+      color: #5E47DE;
+      font-weight: bold;
+      font-size: 0.85rem;
+      line-height: 24px;
+    }
+
+    #workskin .wpp .frompurple2 {
+      color: #7F66FF;
+      font-weight: bold;
+      font-size: 0.85rem;
+      line-height: 24px;
+    }
+
+    #workskin .wpp .fromblue1 {
+      color: #7D9EF1;
+      font-weight: bold;
+      font-size: 0.85rem;
+      line-height: 24px;
+    }
+
+    #workskin .wpp .fromblue2 {
+      color: #007BFC;
+      font-weight: bold;
+      font-size: 0.85rem;
+      line-height: 24px;
+    }
+
+    #workskin .wpp .fromblue3 {
+      color: #53BDEB;
+      font-weight: bold;
+      font-size: 0.85rem;
+      line-height: 24px;
+    }
+
+    #workskin .wpp .previewsent img,
+    #workskin .wpp .previewreceived img {
+      margin-left: -5px;
+      margin-right: 10px;
+      float: left;
+      margin-top: -7px;
+      height: 80px;
+      max-width: 80px;
+      position: relative;
+    }
+
+    #workskin .wpp .titleimg {
+      color: black;
+      font-weight: bold;
+      top: -2px;
+      margin-bottom: -2px;
+      display: block;
+      position: relative;
+    }
+
+    #workskin .wpp .previewtitle {
+      color: black;
+      font-weight: bold;
+      margin-top: -2px;
+      margin-bottom: -2px;
+      display: inline-block;
+      position: relative;
+    }
+
+    #workskin .wpp .links {
+      color: #027EB5;
+    }
+
+    #workskin .wpp .reaction {
+      margin-top: -1.2em;
+      position: relative;
+      display: inline-block;
+      margin-left: .2em;
+      margin-right: .2em;
+      float: right;
+      font-size: 0.95em;
+    }
+
+    #workskin .wpp .contact {
+      color: #FFFFFF;
+      font-weight: bold;
+      font-size: 1.15em;
+      top: 20px;
+      position: absolute;
+      text-align: left;
+      margin-left: 100px;
+      overflow: hidden;
+      max-width: 140px;
+      height: 20px;
+    }
+
+    #workskin .wpp .header .button1 {
+      width: 28px;
+      vertical-align: top;
+      top: 17px;
+      margin-left: 10px;
+      position: absolute;
+    }
+
+    #workskin .wpp .header .button2 {
+      width: 20px;
+      margin-top: 0px;
+      margin-left: 270px;
+      position: absolute;
+    }
+
+    #workskin .wpp .header .button3 {
+      width: 20px;
+      margin-top: 0px;
+      margin-left: 301px;
+      position: absolute;
+    }
+
+    #workskin .wpp .group {
+      color: #FFFFFF;
+      font-weight: bold;
+      font-size: 1.15em;
+      top: 15px;
+      position: absolute;
+      text-align: left;
+      margin-left: 100px;
+      overflow: hidden;
+      max-width: 153px;
+      height: 20px;
+    }
+
+    #workskin .wpp .groupmembers {
+      color: #FFFFFF;
+      font-size: .8em;
+      top: 33px;
+      height: 15px;
+      position: absolute;
+      text-align: left;
+      margin-left: 100px;
+      overflow: hidden;
+      max-width: 153px;
+    }
+
+    #workskin .wpp .typingbar .button1 {
+      width: 26px;
+      vertical-align: top;
+      margin-top: -12px;
+      margin-left: 10px;
+      position: absolute;
+    }
+
+    #workskin .wpp .typingbar .button2 {
+      width: 26px;
+      vertical-align: top;
+      margin-top: -12px;
+      margin-left: 200px;
+      position: absolute;
+    }
+
+    #workskin .wpp .typingbar .button3 {
+      width: 26px;
+      vertical-align: top;
+      margin-top: -12px;
+      margin-left: 235px;
+      position: absolute;
+    }
+
+    #workskin .wpp .light .mic {
+      height: 38px;
+      width: 38px;
+      top: 5px;
+      left: 285px;
+      background: #008069;
+      border-radius: 50%;
+      text-align: left;
+      overflow: hidden;
+      position: absolute;
+      box-shadow: 1.1px 1.1px 3px rgba(202, 203, 204, 1);
+    }
+
+    #workskin .wpp .dark .mic {
+      height: 38px;
+      width: 38px;
+      top: 5px;
+      left: 285px;
+      background: #008069;
+      border-radius: 50%;
+      text-align: left;
+      overflow: hidden;
+      position: absolute;
+      box-shadow: 1.1px 1.1px 3px rgba(16, 27, 34, 1);
+    }
+
+    #workskin .wpp .mic .button1 {
+      width: 26px;
+      vertical-align: top;
+      margin-top: -12px;
+      margin-left: 6px;
+      position: absolute;
+    }
+
+    #workskin .wpp .light .typingbar .text {
+      display: inline-block;
+      color: #999;
+      position: absolute;
+      margin-top: -9px;
+      margin-left: 44px;
+      font-size: .95em;
+    }
+
+    #workskin .wpp .dark .typingbar .text {
+      display: inline-block;
+      color: #8595A0;
+      position: absolute;
+      margin-top: -9px;
+      margin-left: 44px;
+      font-size: .95em;
+    }
+
+    #workskin .wpp .light .sent1 {
+      float: right;
+      color: #000000;
+      margin: 0.1em 1em;
+      margin-top: 0.7em;
+      border-radius: 0.8em 0 0.8em 0.8em;
+      padding: .5em .8em .4em .8em;
+      background: #D9FDD3;
+      max-width: 70%;
+      min-height: 20px;
+      clear: both;
+      position: relative;
+      box-shadow: 1.1px 1.1px 3px rgba(202, 203, 204, 1);
+    }
+
+    #workskin .wpp .light .sent1::after {
+      content: "";
+      width: 0px;
+      height: 0px;
+      border-style: solid;
+      border-width: 0em 1em 1em .5em;
+      border-color: transparent transparent transparent #D9FDD3;
+      position: absolute;
+      top: 0px;
+      right: -1.4em;
+    }
+
+    #workskin .wpp .light .sent1::before {
+      content: "";
+      width: .6em;
+      height: 2em;
+      border: 0px;
+      background-image: linear-gradient(112deg, rgba(202, 203, 204, 1), rgba(255,0,0,0), rgba(255,0,0,0));
+      position: absolute;
+      top: .6px;
+      right: -.6em;
+    }
+
+    #workskin .wpp .light .sent2 {
+      float: right;
+      color: #000000;
+      margin: 0.1em 1em;
+      margin-top: 0.25em;
+      border-radius: 0.8em;
+      padding: .5em .8em .4em .8em;
+      background: #D9FDD3;
+      max-width: 70%;
+      min-height: 20px;
+      clear: both;
+      position: relative;
+      box-shadow: 1.1px 1.1px 3px rgba(202, 203, 204, 1);
+    }
+
+    #workskin .wpp .light .received1 {
+      float: left;
+      color: #000000;
+      margin: 0.1em 1em;
+      margin-top: 0.7em;
+      border-radius: 0 0.8em 0.8em 0.8em;
+      padding: .5em .8em .4em .8em;
+      background: #FAFAFA;
+      max-width: 70%;
+      min-height: 20px;
+      clear: both;
+      position: relative;
+      box-shadow: 1.1px 1.1px 3px rgba(202, 203, 204, 1);
+    }
+
+    #workskin .wpp .light .received1::after {
+      content: "";
+      width: 0px;
+      height: 0px;
+      border-style: solid;
+      border-width: 0px .5em 1em 0px;
+      border-color: transparent #FAFAFA transparent transparent;
+      position: absolute;
+      top: 0px;
+      left: -0.4em;
+    }
+
+    #workskin .wpp .light .received1::before {
+      content: "";
+      width: .6em;
+      height: 2em;
+      border: 0px;
+      background-image: linear-gradient(255deg, rgba(202, 203, 204, 1), rgba(255,0,0,0), rgba(255,0,0,0));
+      position: absolute;
+      top: 1px;
+      left: -.6em;
+    }
+
+    #workskin .wpp .light .received2 {
+      float: left;
+      color: #000000;
+      margin: 0.1em 1em;
+      margin-top: 0.25em;
+      border-radius: 0.8em;
+      padding: .5em .8em .4em .8em;
+      background: #FAFAFA;
+      max-width: 70%;
+      min-height: 20px;
+      clear: both;
+      position: relative;
+      box-shadow: 1.1px 1.1px 3px rgba(202, 203, 204, 1);
+    }
+
+    #workskin .wpp .light .info p {
+      max-width: 75%;
+      border-radius: 9px;
+      padding: 9px;
+      display: inline-block;
+      background: #F8F7F5;
+      box-shadow: 1.1px 1.1px 3px rgba(202, 203, 204, 1);
+      color: #55646D;
+      opacity: .9;
+    }
+
+    #workskin .wpp .light .quotesentgreen1 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #D1F4CC;
+      color: #757575;
+      border-left: 4px solid #06CF9C;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotereceivedgreen1 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #F1F2F2;
+      color: #757575;
+      border-left: 4px solid #06CF9C;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotesentgreen2 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #D1F4CC;
+      color: #757575;
+      border-left: 4px solid #02A698;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotereceivedgreen2 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #F1F2F2;
+      color: #757575;
+      border-left: 4px solid #02A698;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotesentgreen3 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #D1F4CC;
+      color: #757575;
+      border-left: 4px solid #3DB46C;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotereceivedgreen3 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #F1F2F2;
+      color: #757575;
+      border-left: 4px solid #3DB46C;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotesentgreen4 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #D1F4CC;
+      color: #757575;
+      border-left: 4px solid #25D366;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotereceivedgreen4 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #F1F2F2;
+      color: #757575;
+      border-left: 4px solid #25D366;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotesentgreen5 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #D1F4CC;
+      color: #757575;
+      border-left: 4px solid #A5B337;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotereceivedgreen5 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #F1F2F2;
+      color: #757575;
+      border-left: 4px solid #A5B337;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotesentyellow {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #D1F4CC;
+      color: #757575;
+      border-left: 4px solid #FFBC38;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotereceivedyelow {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #F1F2F2;
+      color: #757575;
+      border-left: 4px solid #FFBC38;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotesentbrown1 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #D1F4CC;
+      color: #757575;
+      border-left: 4px solid #B4876E;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotereceivedbrown1 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #F1F2F2;
+      color: #757575;
+      border-left: 4px solid #B4876E;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotesentbrown2 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #D1F4CC;
+      color: #757575;
+      border-left: 4px solid #C4532D;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotereceivedbrown2 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #F1F2F2;
+      color: #757575;
+      border-left: 4px solid #C4532D;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotesentred {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #D1F4CC;
+      color: #757575;
+      border-left: 4px solid #EB2837;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotereceivedred {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #F1F2F2;
+      color: #757575;
+      border-left: 4px solid #EB2837;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotesentpink1 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #D1F4CC;
+      color: #757575;
+      border-left: 4px solid #FF2E74;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotereceivedpink1 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #F1F2F2;
+      color: #757575;
+      border-left: 4px solid #FF2E74;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotesentpink2 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #D1F4CC;
+      color: #757575;
+      border-left: 4px solid #E542A3;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotereceivedpink2 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #F1F2F2;
+      color: #757575;
+      border-left: 4px solid #E542A3;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotesentpurple1 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #D1F4CC;
+      color: #757575;
+      border-left: 4px solid #5E47DE;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotereceivedpurple1 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #F1F2F2;
+      color: #757575;
+      border-left: 4px solid #5E47DE;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotesentpurple2 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #D1F4CC;
+      color: #757575;
+      border-left: 4px solid #7F66FF;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotereceivedpurple2 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #F1F2F2;
+      color: #757575;
+      border-left: 4px solid #7F66FF;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotesentblue1 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #D1F4CC;
+      color: #757575;
+      border-left: 4px solid #7D9EF1;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotereceivedblue1 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #F1F2F2;
+      color: #757575;
+      border-left: 4px solid #7D9EF1;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotesentblue2 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #D1F4CC;
+      color: #757575;
+      border-left: 4px solid #007BFC;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotereceivedblue2 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #F1F2F2;
+      color: #757575;
+      border-left: 4px solid #007BFC;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotesentblue3 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #D1F4CC;
+      color: #757575;
+      border-left: 4px solid #53BDEB;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .quotereceivedblue3 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #F1F2F2;
+      color: #757575;
+      border-left: 4px solid #53BDEB;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .previewsent {
+      font-size: 0.85rem;
+      overflow: hidden;
+      height: 73px;
+      background-color: #D1F4CC;
+      color: #757575;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -5px;
+      margin-left: -8px;
+      width: 244px;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .previewreceived {
+      font-size: 0.85rem;
+      overflow: hidden;
+      height: 73px;
+      background-color: #F1F2F2;
+      color: #757575;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -5px;
+      margin-left: -8px;
+      width: 244px;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .light .previewlinksent {
+      font-size: 0.7rem;
+      color: #97B298;
+    }
+
+    #workskin .wpp .light .previewlinkreceived {
+      font-size: 0.7rem;
+      color: #B0B4B6;
+    }
+
+    #workskin .wpp .light .reactionsent {
+      float: right;
+      padding-left: .2em;
+      padding-right: .2em;
+      padding-bottom: 0.8em;
+      padding-top: .2em;
+      right: 20px;
+      min-width: 10px;
+      height: 10px;
+      display: block;
+      background: #FAFAFA;
+      box-shadow: 1.1px 1.1px 3px rgba(202, 203, 204, 1);
+      color: #999;
+      border-radius: 15px;
+      position: relative;
+      clear: both;
+      margin: 0.1em .5em;
+      margin-top: -.4em;
+      margin-bottom: .1em;
+      margin-left: 1.4em;
+      text-align: right;
+    }
+
+    #workskin .wpp .light .reactionreceived {
+      float: left;
+      padding-left: .2em;
+      padding-right: .2em;
+      padding-bottom: 0.8em;
+      padding-top: .2em;
+      left: 5px;
+      min-width: 10px;
+      height: 10px;
+      display: block;
+      background: #FAFAFA;
+      box-shadow: 1.1px 1.1px 3px rgba(202, 203, 204, 1);
+      color: #999;
+      border-radius: 15px;
+      position: relative;
+      clear: both;
+      margin: 0.1em .5em;
+      margin-top: -.4em;
+      margin-bottom: .1em;
+      margin-left: 1.4em;
+      text-align: left;
+    }
+
+    #workskin .wpp .light .header {
+      background: #008069;
+      width: 355;
+      height: 60px;
+      vertical-align: top;
+      top: 0px;
+      margin-bottom: -3px;
+      overflow: hidden;
+      position: sticky;
+      z-index: 8;
+    }
+
+    #workskin .wpp .header .icon {
+      width: 40px;
+      border-radius: 50%;
+      float: left;
+      margin-top: -8px;
+      margin-left: 45px;
+      overflow: hidden;
+      position: absolute;
+    }
+
+    #workskin .wpp .light .bg1 {
+      background-image: url("https://i.ibb.co/r4trrrQ/bglight1.png");
+      background-position: center top;
+      background-repeat: repeat-y;
+      overflow-y: auto;
+      overflow-x: hidden;
+      height: 470px;
+      width: 330px;
+    }
+
+    #workskin .wpp .light .footer1 {
+      min-width: 330;
+      height: 50px;
+      position: relative;
+      vertical-align: bottom;
+      overflow: hidden;
+      margin-top: -1px;
+      background-image: url("https://i.ibb.co/r4trrrQ/bglight1.png");
+      background-position: center bottom;
+      background-repeat: repeat-y;
+    }
+
+    #workskin .wpp .light .typingbar {
+      height: 38px;
+      width: 270px;
+      top: 5px;
+      left: 10px;
+      background: #FAFAFA;
+      border-radius: 20px;
+      text-align: left;
+      overflow: hidden;
+      position: absolute;
+      box-shadow: 1.1px 1.1px 3px rgba(202, 203, 204, 1);
+    }
+
+    #workskin .wpp .dark .sent1 {
+      float: right;
+      color: #E9ECEF;
+      margin: 0.1em 1em;
+      margin-top: 0.7em;
+      border-radius: 0.8em 0 0.8em 0.8em;
+      padding: .5em .8em .4em .8em;
+      background: #005C4B;
+      max-width: 70%;
+      min-height: 20px;
+      clear: both;
+      position: relative;
+      box-shadow: 1.1px 1.1px 3px rgba(16, 27, 34, 1);
+    }
+
+    #workskin .wpp .dark .sent1::after {
+      content: "";
+      width: 0px;
+      height: 0px;
+      border-style: solid;
+      border-width: 0em 1em 1em .5em;
+      border-color: transparent transparent transparent #005C4B;
+      position: absolute;
+      top: 0px;
+      right: -1.4em;
+    }
+
+    #workskin .wpp .dark .sent1::before {
+      content: "";
+      width: .6em;
+      height: 2em;
+      border: 0px;
+      background-image: linear-gradient(112deg, rgba(16, 27, 34, 1), rgba(255,0,0,0), rgba(255,0,0,0));
+      position: absolute;
+      top: .6px;
+      right: -.6em;
+    }
+
+    #workskin .wpp .dark .sent2 {
+      float: right;
+      color: #E9ECEF;
+      margin: 0.1em 1em;
+      margin-top: 0.25em;
+      border-radius: 0.8em;
+      padding: .5em .8em .4em .8em;
+      background: #005C4B;
+      max-width: 70%;
+      min-height: 20px;
+      clear: both;
+      position: relative;
+      box-shadow: 1.1px 1.1px 3px rgba(16, 27, 34, 1);
+    }
+
+    #workskin .wpp .dark .received1 {
+      float: left;
+      color: #E9ECEF;
+      margin: 0.1em 1em;
+      margin-top: 0.7em;
+      border-radius: 0 0.8em 0.8em 0.8em;
+      padding: .5em .8em .4em .8em;
+      background: #202C33;
+      max-width: 70%;
+      min-height: 20px;
+      clear: both;
+      position: relative;
+      box-shadow: 1.1px 1.1px 3px rgba(16, 27, 34, 1);
+    }
+
+    #workskin .wpp .dark .received1::after {
+      content: "";
+      width: 0px;
+      height: 0px;
+      border-style: solid;
+      border-width: 0px .5em 1em 0px;
+      border-color: transparent #202C33 transparent transparent;
+      position: absolute;
+      top: 0px;
+      left: -0.4em;
+    }
+
+    #workskin .wpp .dark .received1::before {
+      content: "";
+      width: .6em;
+      height: 2em;
+      border: 0px;
+      background-image: linear-gradient(255deg, rgba(16, 27, 34, 1), rgba(255,0,0,0), rgba(255,0,0,0));
+      position: absolute;
+      top: 1px;
+      left: -.6em;
+    }
+
+    #workskin .wpp .dark .received2 {
+      float: left;
+      color: #E9ECEF;
+      margin: 0.1em 1em;
+      margin-top: 0.25em;
+      border-radius: 0.8em;
+      padding: .5em .8em .4em .8em;
+      background: #202C33;
+      max-width: 70%;
+      min-height: 20px;
+      clear: both;
+      position: relative;
+      box-shadow: 1.1px 1.1px 3px rgba(16, 27, 34, 1);
+    }
+
+    #workskin .wpp .dark .info p {
+      max-width: 75%;
+      border-radius: 9px;
+      padding: 9px;
+      display: inline-block;
+      background: #202C33;
+      box-shadow: 1.1px 1.1px 3px rgba(16, 27, 34, 1);
+      color: #8595A0;
+      opacity: .9;
+    }
+
+    #workskin .wpp .dark .quotesentgreen1 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #025043;
+      color: #9BB9B4;
+      border-left: 4px solid #06CF9C;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .dark .quotereceivedgreen1 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #1E292F;
+      color: #8596A0;
+      border-left: 4px solid #06CF9C;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .dark .quotesentgreen2 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #025043;
+      color: #9BB9B4;
+      border-left: 4px solid #02A698;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .dark .quotereceivedgreen2 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #1E292F;
+      color: #8596A0;
+      border-left: 4px solid #02A698;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .dark .quotesentgreen3 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #025043;
+      color: #9BB9B4;
+      border-left: 4px solid #3DB46C;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .dark .quotereceivedgreen3 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #1E292F;
+      color: #8596A0;
+      border-left: 4px solid #3DB46C;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .dark .quotesentgreen4 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #025043;
+      color: #9BB9B4;
+      border-left: 4px solid #25D366;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .dark .quotereceivedgreen4 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #1E292F;
+      color: #8596A0;
+      border-left: 4px solid #25D366;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .dark .quotesentgreen5 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #025043;
+      color: #9BB9B4;
+      border-left: 4px solid #A5B337;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .dark .quotereceivedgreen5 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #1E292F;
+      color: #8596A0;
+      border-left: 4px solid #A5B337;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .dark .quotesentyellow {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #025043;
+      color: #9BB9B4;
+      border-left: 4px solid #FFBC38;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .dark .quotereceivedyelow {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #1E292F;
+      color: #8596A0;
+      border-left: 4px solid #FFBC38;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .dark .quotesentbrown1 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #025043;
+      color: #9BB9B4;
+      border-left: 4px solid #B4876E;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .dark .quotereceivedbrown1 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #1E292F;
+      color: #8596A0;
+      border-left: 4px solid #B4876E;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .dark .quotesentbrown2 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #025043;
+      color: #9BB9B4;
+      border-left: 4px solid #C4532D;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .dark .quotereceivedbrown2 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #1E292F;
+      color: #8596A0;
+      border-left: 4px solid #C4532D;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .dark .quotesentred {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #025043;
+      color: #9BB9B4;
+      border-left: 4px solid #EB2837;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .dark .quotereceivedred {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #1E292F;
+      color: #8596A0;
+      border-left: 4px solid #EB2837;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .dark .quotesentpink1 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #025043;
+      color: #9BB9B4;
+      border-left: 4px solid #FF2E74;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .dark .quotereceivedpink1 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #1E292F;
+      color: #8596A0;
+      border-left: 4px solid #FF2E74;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .dark .quotesentpink2 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #025043;
+      color: #9BB9B4;
+      border-left: 4px solid #E542A3;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .dark .quotereceivedpink2 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #1E292F;
+      color: #8596A0;
+      border-left: 4px solid #E542A3;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .dark .quotesentpurple1 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #025043;
+      color: #9BB9B4;
+      border-left: 4px solid #5E47DE;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .dark .quotereceivedpurple1 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #1E292F;
+      color: #8596A0;
+      border-left: 4px solid #5E47DE;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .dark .quotesentpurple2 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #025043;
+      color: #9BB9B4;
+      border-left: 4px solid #7F66FF;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .dark .quotereceivedpurple2 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #1E292F;
+      color: #8596A0;
+      border-left: 4px solid #7F66FF;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .dark .quotesentblue1 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #025043;
+      color: #9BB9B4;
+      border-left: 4px solid #7D9EF1;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .dark .quotereceivedblue1 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #1E292F;
+      color: #8596A0;
+      border-left: 4px solid #7D9EF1;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .dark .quotesentblue2 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #025043;
+      color: #9BB9B4;
+      border-left: 4px solid #007BFC;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .dark .quotereceivedblue2 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #1E292F;
+      color: #8596A0;
+      border-left: 4px solid #007BFC;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .dark .quotesentblue3 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #025043;
+      color: #9BB9B4;
+      border-left: 4px solid #53BDEB;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .dark .quotereceivedblue3 {
+      font-size: 0.85rem;
+      overflow: hidden;
+      max-height: 5em;
+      background-color: #1E292F;
+      color: #8596A0;
+      border-left: 4px solid #53BDEB;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -3px;
+      margin-left: -8px;
+      width: 103%;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .dark .previewsent .titleimg {
+      color: #9BB9B4;
+      font-weight: bold;
+      top: -2px;
+      margin-bottom: -2px;
+      display: block;
+      position: relative;
+    }
+
+    #workskin .wpp .dark .previewsent .previewtitle {
+      font-weight: bold;
+      margin-top: -2px;
+      margin-bottom: -2px;
+      display: inline-block;
+      position: relative;
+      color: #9BB9B4;
+    }
+
+    #workskin .wpp .dark .previewreceived .titleimg {
+      color: #8596A0;
+      font-weight: bold;
+      top: -2px;
+      margin-bottom: -2px;
+      display: block;
+      position: relative;
+    }
+
+    #workskin .wpp .dark .previewreceived .previewtitle {
+      font-weight: bold;
+      margin-top: -2px;
+      margin-bottom: -2px;
+      display: inline-block;
+      position: relative;
+      color: #8596A0;
+    }
+
+    #workskin .wpp .dark .previewsent {
+      font-size: 0.85rem;
+      overflow: hidden;
+      height: 73px;
+      background-color: #025043;
+      color: #9BB9B4;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -5px;
+      margin-left: -8px;
+      width: 244px;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .dark .previewreceived {
+      font-size: 0.85rem;
+      overflow: hidden;
+      height: 73px;
+      background-color: #1E292F;
+      color: #8596A0;
+      display: block;
+      border-radius: 0.4em;
+      margin-top: -5px;
+      margin-left: -8px;
+      width: 244px;
+      padding-left: .4em;
+      padding-top: .5em;
+      padding-botton: .4em;
+      position: relative;
+      margin-bottom: 8px;
+    }
+
+    #workskin .wpp .dark .previewlinksent {
+      font-size: 0.7rem;
+      color: #66968D;
+    }
+
+    #workskin .wpp .dark .previewlinkreceived {
+      font-size: 0.7rem;
+      color: #71767C;
+    }
+
+    #workskin .wpp .dark .reactionsent {
+      float: right;
+      padding-left: .2em;
+      padding-right: .2em;
+      padding-bottom: 0.8em;
+      padding-top: .2em;
+      right: 20px;
+      min-width: 10px;
+      height: 10px;
+      display: block;
+      background: #202C33;
+      box-shadow: 1.1px 1.1px 3px rgba(16, 27, 34, 1);
+      color: #8595A0;
+      border-radius: 15px;
+      position: relative;
+      clear: both;
+      margin: 0.1em .5em;
+      margin-top: -.4em;
+      margin-bottom: .1em;
+      margin-left: 1.4em;
+      text-align: right;
+    }
+
+    #workskin .wpp .dark .reactionreceived {
+      float: left;
+      padding-left: .2em;
+      padding-right: .2em;
+      padding-bottom: 0.8em;
+      padding-top: .2em;
+      left: 5px;
+      min-width: 10px;
+      height: 10px;
+      display: block;
+      background: #202C33;
+      box-shadow: 1.1px 1.1px 3px rgba(16, 27, 34, 1);
+      color: #8595A0;
+      border-radius: 15px;
+      position: relative;
+      clear: both;
+      margin: 0.1em .5em;
+      margin-top: -.4em;
+      margin-bottom: .1em;
+      margin-left: 1.4em;
+      text-align: left;
+    }
+
+    #workskin .wpp .dark .header {
+      background: #1F2C34;
+      width: 355;
+      height: 60px;
+      vertical-align: top;
+      top: 0px;
+      margin-bottom: -3px;
+      overflow: hidden;
+      position: sticky;
+      z-index: 8;
+    }
+
+    #workskin .wpp .dark .bg1 {
+      background-image: url("https://i.ibb.co/LQJgyn8/bgdark.png");
+      background-position: center top;
+      background-repeat: repeat-y;
+      overflow-y: auto;
+      overflow-x: hidden;
+      height: 470px;
+      width: 330px;
+    }
+
+    #workskin .wpp .dark .footer1 {
+      min-width: 330;
+      height: 50px;
+      position: relative;
+      vertical-align: bottom;
+      overflow: hidden;
+      margin-top: -1px;
+      background-image: url("https://i.ibb.co/LQJgyn8/bgdark.png");
+      background-position: center bottom;
+      background-repeat: repeat-y;
+    }
+
+    #workskin .wpp .dark .typingbar {
+      height: 38px;
+      width: 270px;
+      top: 5px;
+      left: 10px;
+      background: #1F2C34;
+      border-radius: 20px;
+      text-align: left;
+      overflow: hidden;
+      position: absolute;
+      box-shadow: 1.1px 1.1px 3px rgba(16, 27, 34, 1);
+    }
+
+/* d33rmilk Twitter post workskin (provided tutorial) */
+#workskin .twt {
+  float: center;
+  max-width: 20em;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin: 0em auto;
+  border: 1px solid #c7c7c7;
+  border-radius: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+}
+
+#workskin .twt-header {
+  overflow: hidden;
+  margin-top: -0.5em;
+  margin-bottom: -2.8em;
+}
+
+#workskin .twt-icon-container {
+  float: left;
+}
+
+#workskin .twt-icon {
+  border-radius: 50%;
+  width: 3em;
+}
+
+#workskin .twt-iconquote {
+  border-radius: 50%;
+  width: 2em;
+}
+
+#workskin .twt-id {
+  padding-left: 1em;
+  overflow: hidden;
+}
+
+#workskin .twt-name {
+  font-weight: bold;
+}
+
+#workskin .twt-name:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#workskin .twt-handle {
+  font-size: 0.9em;
+  color: #657786;
+}
+
+#workskin .twt-handle:hover {
+  cursor: pointer;
+}
+
+#workskin .twt-content {
+  font-size: 1em;
+  margin-bottom: -1em;
+}
+
+#workskin .twt-contentquote {
+  font-size: 1em;
+  margin-bottom: -0.5em;
+}
+
+#workskin .twt-timestamp {
+  color: #657786;
+  font-size: 0.7em;
+}
+
+#workskin hr.twt-sep,
+#workskin hr.twt-sep-reply {
+  border: none;
+  height: 1px;
+  width: 100%;
+  margin-top: -0.5em;
+  margin-bottom: -0.5em;
+  background-color: #e6e6e6;
+}
+
+#workskin .twt-stat1 {
+  color: #657786;
+  font-size: 0.7em;
+}
+
+#workskin .twt-quotebox {
+  padding-left: 1em;
+  padding-right: 1em;
+  border: 1px solid #c7c7c7;
+  border-radius: 10px;
+}
+
+#workskin .twt-image {
+  float: center;
+  max-width: 100%;
+  border: 1px solid #c7c7c7;
+  border-radius: 10px;
+  margin-bottom: -0.5em;
+}
+
+#workskin .twt-icon-replycontainer {
+  float: left;
+}
+
+#workskin .twt-replycontainer {
+  padding-left: 1em;
+  overflow: hidden;
+}
+
+#workskin .twt-replycontent {
+  margin-top: -1.5em;
+  margin-bottom: -0.5em;
+}
+
+#workskin .twt-stat2 {
+  color: #657786;
+  font-size: 0.7em;
+  margin-top: -2em;
+}
+
+#workskin .twt-social {
+  float: left;
+  margin-right: 2em;
+  margin-bottom: -0.5em;
+}
+
+#workskin .twt-socialimg {
+  height: 12px;
+  display: inline;
+  padding-right: 3px;
+}
+
+#workskin .twt-hl {
+  font-size: 0.9em;
+  color: #1DA1F2;
+}
+
+#workskin .twt-hl:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* d33rmilk Twitter profiles */
+#workskin .twt-profile {
+  float: center;
+  max-width: 600px;
+  min-width: 350px;
+  margin: 0em auto;
+  border: 1px solid #c7c7c7;
+  border-radius: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", sans-serif;
+  position: relative;
+}
+
+#workskin .twt-profile-header {
+  width: 100%;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+  margin-top: -1.3em;
+  height: 13em;
+  z-index: -1;
+}
+
+#workskin .twt-profile-id {
+  margin-top: -7.5em;
+  position: relative;
+  padding-left: 1.3em;
+  padding-right: 1.3em;
+  z-index: 1;
+  overflow: hidden;
+}
+
+#workskin .twt-iconprofile {
+  border-radius: 50%;
+  width: 9em;
+  border: 3px solid white;
+  float: left;
+}
+
+#workskin .twt-profile-social {
+  float: right;
+  width: 9em;
+  margin-top: 2.3em;
+}
+
+#workskin .twt-profile-share {
+  height: 15px;
+  padding: 0.8em;
+  border: 1px solid #cbcbcb;
+  border-radius: 50%;
+  margin-right: 0.6em;
+  float: left;
+  margin-top: 1.6em;
+}
+
+#workskin .twt-profile-share:hover {
+  background-color: #e7e7e8;
+  cursor: pointer;
+}
+
+#workskin .twt-profile-follow {
+  border: 1px solid white;
+  background-color: black;
+  border-radius: 1.5em;
+  color: white;
+  font-weight: bold;
+  padding: 0.6em 1em;
+  float: right;
+}
+
+#workskin .twt-profile-follow:hover {
+  background-color: #282c30;
+  cursor: pointer;
+}
+
+#workskin .twt-profile-container {
+  padding-left: 1.3em;
+  padding-right: 1.3em;
+}
+
+#workskin .twt-profile-name {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin-top: -1em;
+  margin-bottom: -1.5em;
+}
+
+#workskin .twt-profile-handle {
+  color: #657786;
+  margin-top: -1em;
+  margin-bottom: -1em;
+}
+
+#workskin .twt-profile-info {
+  overflow: hidden;
+  color: #657786;
+}
+
+#workskin .twt-profile-description {
+  margin-bottom: -1em;
+}
+
+#workskin .twt-profile-socialcontainer {
+  float: left;
+  margin-right: 1em;
+  margin-top: -1em;
+  margin-bottom: -1em;
+}
+
+#workskin .twt-profile-socialimg {
+  height: 13px;
+  margin-right: 4px;
+}
+
+#workskin .twt-following {
+  color: #657786;
+  margin-top: -1em;
+}
+
+#workskin .twt-following-no {
+  font-weight: bold;
+}
+
+
+/* Fanfiction-specific additions — the original WhatsApp and Twitter CSS above is unchanged. */
+#workskin .fic-prose > p {
+  font-family: Poppins, "Avenir Next", Avenir, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.6em;
+  margin: 1.15em 0;
+}
+#workskin .fic-kicker {
+  font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.28em;
+  font-size: 0.72em;
+  font-weight: 600;
+  color: #9a8f95;
+  margin-bottom: 0.8em;
+}
+#workskin .fic-main-title {
+  font-family: "Avenir Next", "Trebuchet MS", "Helvetica Neue", Arial, sans-serif;
+  text-align: center;
+  font-weight: 500;
+  font-size: 2.1em;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+  color: #554b50;
+  margin: 0.2em auto;
+}
+#workskin .fic-subtitle {
+  font-family: "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+  text-align: center;
+  font-size: 0.85em;
+  letter-spacing: 0.08em;
+  color: #9b8e94;
+}
+#workskin .fic-title-divider {
+  text-align: center;
+  margin: 1.5em auto 2em;
+  color: #b88b9b;
+  letter-spacing: 0.4em;
+}
+#workskin .fic-time {
+  text-align: center;
+  font-family: "Avenir Next", Arial, sans-serif;
+  font-size: 0.8em;
+  color: #987f89;
+  letter-spacing: 0.05em;
+  margin: 1em auto 0.5em;
+}
+#workskin .wpp .wpp-mention { color: #53BDEB; }
+#workskin .twt .sn-liked {font-size: 0.8em; color: #657786;}
+#workskin .sn-trending {
+  max-width: 20em;
+  padding: 0.5em 1em;
+  margin: 1.4em auto;
+  border: 1px solid #c7c7c7;
+  border-radius: 10px;
+  font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+}
+#workskin .sn-trending-title {font-size: 0.85em; font-weight: bold;}
+#workskin .sn-trend {border-top: 1px solid #eeeeee; padding: 0.3em 0;}
+#workskin .sn-trend p {margin: 0.35em 0;}
+#workskin .sn-trend-category, #workskin .sn-trend-count {font-size: 0.7em; color:#657786;}
+#workskin .sn-trend-name {font-size: 0.95em;}
+/* Two layout corrections for modern AO3/browser paragraph rendering. */
+#workskin .twt .twt-header { margin-bottom: -1.6em; }
+#workskin .twt .twt-content { margin-bottom: 0; }
+#workskin .twt .twt-replycontent { margin-top: 0; margin-bottom: 0; }
+#workskin .twt .twt-replycontainer > p { margin: 0.35em 0; line-height: 1.45em; }
+#workskin .wpp .group { top: 7px; height: 31px; max-width: 156px; font-size: 0.83em; line-height: 1.05em; white-space: normal; }
+#workskin .wpp .groupmembers { top: 43px; }
+
+/* Sky's Gang / Dangerous Gang introductions: coloured circular borders only. */
+#workskin .fic-gangs {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto 1.8em auto;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+#workskin .fic-gang {
+  margin: 0 auto 1.5em auto;
+}
+#workskin .fic-gang-title {
+  font-size: 1.15em;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 0.8em 0;
+}
+/* Each gang stays in a single horizontal line. */
+#workskin .fic-gang-row {
+  width: 100%;
+  display: block;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 0;
+}
+#workskin .fic-gang-member {
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  text-align: center;
+  white-space: normal;
+  margin: 0 0.3%;
+  padding: 0;
+  border: 0;
+  font-size: 13px;
+  line-height: 1.2;
+}
+#workskin .fic-gang-row-six .fic-gang-member {
+  width: 15.6%;
+}
+#workskin .fic-gang-row-four .fic-gang-member {
+  width: 23.5%;
+}
+#workskin .fic-gang-avatar {
+  display: block;
+  width: 42px;
+  height: 42px;
+  max-width: 82%;
+  box-sizing: border-box;
+  margin: 0 auto 5px auto;
+  border: 3px solid #b9a0e5;
+  border-radius: 50%;
+  object-fit: cover;
+}
+#workskin .fic-gang-row-four .fic-gang-avatar {
+  width: 62px;
+  height: 62px;
+}
+#workskin .fic-gang-name {
+  display: block;
+  font-size: 0.78em;
+  font-weight: bold;
+  text-align: center;
+}
+#workskin .fic-gang-ring-sky { border-color: #ef7faf; }
+#workskin .fic-gang-ring-pond { border-color: #65a7e9; }
+#workskin .fic-gang-ring-mark { border-color: #efbd63; }
+#workskin .fic-gang-ring-tay { border-color: #65c9b3; }
+#workskin .fic-gang-ring-phuwin { border-color: #a593ef; }
+#workskin .fic-gang-ring-joss { border-color: #ec8e80; }
+#workskin .fic-gang-ring-nani { border-color: #bc8ee9; }
+#workskin .fic-gang-ring-prem { border-color: #7dc88d; }
+#workskin .fic-gang-ring-markji { border-color: #6db7df; }
+#workskin .fic-gang-ring-winny { border-color: #f5b96a; }
+
+
+
+/* Additional classes already present in Chapters 2 and 3. */
+#workskin .fic-chapter { width:100%; }
+#workskin .twt .twt-fan-avatar {
+  display:inline-block; width:3em; height:3em; border-radius:50%;
+  line-height:3em; font-weight:700; text-align:center; color:white;
+  vertical-align:middle;
+}
+#workskin .twt .twt-fan-lilac { background-color:#8e7bb7; }
+#workskin .twt .twt-fan-berry { background-color:#a25779; }
+#workskin .twt .twt-fan-rose { background-color:#bc7891; }
+#workskin .twt .twt-fan-coral { background-color:#bb7973; }
+#workskin .fic-picture { width:100%; max-width:20em; margin:1.2em auto; }
+#workskin .fic-picture img { max-width:100%; width:100%; height:auto; display:block; margin:auto; border-radius:10px; }
+#workskin .fic-online-quote { text-align:center; margin:1em auto; color:#987e89; font-size:.91em; }
+
+/* CROSS-CHAPTER TWEET LAYOUT STABILIZATION.
+   This section fixes the former negative-margin collisions in normal browsers.
+   It affects layout only; preserves the original d33rmilk class names and appearance. */
+#workskin .twt {
+  display:flow-root;
+  box-sizing:border-box;
+  float:none;
+  clear:both;
+  width:100%;
+  max-width:20em;
+  height:auto;
+  padding:.85em 1em;
+  margin:1.1em auto;
+  overflow-wrap:anywhere;
+  word-wrap:break-word;
+  line-height:1.4;
+}
+#workskin .twt .twt-header {
+  display:flow-root;
+  position:relative;
+  min-height:3em;
+  margin:0 0 .6em;
+  overflow:visible;
+}
+#workskin .twt .twt-icon-container,
+#workskin .twt .twt-icon-replycontainer { float:left; }
+#workskin .twt img.twt-icon { display:block; width:3em; height:3em; object-fit:cover; }
+#workskin .twt img.twt-iconquote { display:block; width:2em; height:2em; object-fit:cover; }
+#workskin .twt .twt-id { padding-left:.75em; min-width:0; overflow:hidden; }
+#workskin .twt .twt-content,
+#workskin .twt .twt-contentquote,
+#workskin .twt .twt-replycontent { margin:0; min-width:0; line-height:1.45; }
+#workskin .twt p { margin:.45em 0; line-height:1.45; }
+#workskin .twt .twt-header p { margin:0; }
+#workskin .twt .twt-content > p:first-child,
+#workskin .twt .twt-contentquote > p:first-child,
+#workskin .twt .twt-replycontent > p:first-child { margin-top:0; }
+#workskin .twt .twt-content > p:last-child,
+#workskin .twt .twt-contentquote > p:last-child,
+#workskin .twt .twt-replycontent > p:last-child { margin-bottom:0; }
+#workskin .twt img.twt-image {
+  display:block;
+  box-sizing:border-box;
+  float:none;
+  width:auto;
+  max-width:100%;
+  height:auto;
+  object-fit:contain;
+  margin:.7em auto;
+}
+#workskin .twt .twt-quotebox {
+  display:flow-root;
+  clear:both;
+  box-sizing:border-box;
+  width:100%; max-width:100%;
+  margin:.75em 0;
+  padding:.7em;
+}
+#workskin .twt .twt-quotebox .twt-header {min-height:2em; margin-bottom:.5em;}
+#workskin .twt .twt-timestamp {clear:both; margin:.6em 0 0; line-height:1.4;}
+#workskin .twt .twt-timestamp > p {margin:0; line-height:1.4;}
+#workskin .twt .twt-stat1 {margin:.55em 0 0; line-height:1.4;}
+#workskin .twt .twt-stat1 > p {margin:0;}
+#workskin .twt .twt-replybox {display:flow-root; clear:both; margin:0; padding:.45em 0; }
+#workskin .twt .twt-replycontainer {display:block; overflow:hidden; min-width:0; padding-left:.7em; }
+#workskin .twt .twt-replycontainer > p {margin:0 0 .4em; line-height:1.4;}
+#workskin .twt .twt-stat2 {display:flow-root; margin:.5em 0 0; min-height:.9em; padding:0; }
+#workskin .twt .twt-social {float:left; margin:0 1.1em 0 0;}
+#workskin .twt .twt-social p {margin:0;}
+#workskin .twt .twt-socialimg {vertical-align:middle;}
+#workskin hr.twt-sep,
+#workskin hr.twt-sep-reply {clear:both; display:block; height:1px; margin:.65em 0; width:100%;}
+/* Ensure standalone prose never ends up alongside a floated chat/post. */
+#workskin .fic-prose {clear:both;}
+#workskin .wpp {float:none; clear:both; margin:1.1em auto;}
+#workskin .fic-gangs {clear:both;}
+@media (max-width:480px) {
+  #workskin .twt { width:100%; max-width:20em; }
+  #workskin .twt .twt-social {margin-right:.85em;}
+  #workskin .fic-gang-member {margin-left:0; margin-right:0;}
+}
+
+
+/* CHAPTER ONE — WHATSAPP LAYOUT ONLY
+   Add to the END of the existing AO3 workskin.
+   This patch does not target Twitter, tweets, replies, icons, or prose.
+   It changes no dialogue, timestamps, HTML, or image URLs.
+*/
+#workskin .wpp {
+  box-sizing: border-box;
+  width: 330px;
+  max-width: 100%;
+  float: none;
+  clear: both;
+  margin: 1.25em auto;
+  overflow: hidden;
+}
+#workskin .wpp .light {
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+}
+/* Use fixed positions relative to the 330px header, not negative margins. */
+#workskin .wpp .light .header {
+  position: relative;
+  top: auto;
+  width: 100%;
+  height: 60px;
+  margin: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+#workskin .wpp .header .button1 {
+  position: absolute;
+  top: 18px;
+  left: 7px;
+  width: 25px;
+  height: 25px;
+  margin: 0;
+  object-fit: contain;
+}
+#workskin .wpp .header .icon {
+  position: absolute;
+  float: none;
+  top: 10px;
+  left: 39px;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #317965;
+}
+#workskin .wpp .group {
+  position: absolute;
+  top: 8px;
+  left: 90px;
+  width: 150px;
+  max-width: 150px;
+  height: auto;
+  max-height: 33px;
+  margin: 0;
+  font-size: .83em;
+  line-height: 1.13;
+  white-space: normal;
+  overflow: hidden;
+}
+#workskin .wpp .groupmembers {
+  position: absolute;
+  top: 43px;
+  left: 90px;
+  width: 150px;
+  max-width: 150px;
+  height: 14px;
+  margin: 0;
+  font-size: .72em;
+  line-height: 1.15;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+#workskin .wpp .header .button2 {
+  position: absolute;
+  top: 20px;
+  left: auto;
+  right: 39px;
+  width: 19px;
+  height: 19px;
+  margin: 0;
+  object-fit: contain;
+}
+#workskin .wpp .header .button3 {
+  position: absolute;
+  top: 20px;
+  left: auto;
+  right: 11px;
+  width: 19px;
+  height: 19px;
+  margin: 0;
+  object-fit: contain;
+}
+/* Keep each floated bubble inside its own paragraph, avoiding overlap. */
+#workskin .wpp .light .bg1 {
+  box-sizing: border-box;
+  width: 100%;
+  height: 470px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin: 0;
+}
+#workskin .wpp .light .bg1 > p {
+  display: flow-root;
+  clear: both;
+  margin: 0;
+  padding: 0;
+  line-height: 1.35;
+}
+/* Clear floats as a fallback if a workskin parser drops flow-root. */
+#workskin .wpp .light .bg1 > p::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#workskin .wpp .light .bg1 > p > .sent1,
+#workskin .wpp .light .bg1 > p > .sent2,
+#workskin .wpp .light .bg1 > p > .received1,
+#workskin .wpp .light .bg1 > p > .received2 {
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+#workskin .wpp .light .info {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 12px auto 4px;
+  text-align: center;
+}
+#workskin .wpp .light .info p {
+  margin: 0 auto .25em;
+}
+/* Align input, attachment controls and mic to the footer's edges. */
+#workskin .wpp .light .footer1 {
+  position: relative;
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  height: 50px;
+  margin: 0;
+  overflow: hidden;
+}
+#workskin .wpp .light .typingbar {
+  position: absolute;
+  box-sizing: border-box;
+  top: 5px;
+  left: 8px;
+  width: 269px;
+  height: 38px;
+  margin: 0;
+}
+#workskin .wpp .typingbar .button1,
+#workskin .wpp .typingbar .button2,
+#workskin .wpp .typingbar .button3,
+#workskin .wpp .mic .button1 {
+  position: absolute;
+  top: 6px;
+  margin: 0;
+}
+#workskin .wpp .typingbar .button1 { left: 10px; }
+#workskin .wpp .typingbar .button2 { left: auto; right: 38px; }
+#workskin .wpp .typingbar .button3 { left: auto; right: 9px; }
+#workskin .wpp .light .typingbar .text {
+  position: absolute;
+  top: 10px;
+  left: 44px;
+  margin: 0;
+  white-space: nowrap;
+}
+#workskin .wpp .light .mic {
+  position: absolute;
+  top: 5px;
+  left: auto;
+  right: 5px;
+  margin: 0;
+}
+#workskin .wpp .mic .button1 {left: 6px;}
+
+/* CHAPTERS TWO & THREE: align direct-message contact names as well as group names.
+   Chapter One's chats have group headers only. No HTML changes are needed. */
+#workskin .wpp .header .contact {
+  position: absolute;
+  top: 18px;
+  left: 90px;
+  width: 150px;
+  max-width: 150px;
+  height: 25px;
+  margin: 0;
+  font-size: .95em;
+  line-height: 1.3;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
