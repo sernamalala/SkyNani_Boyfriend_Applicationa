@@ -3394,3 +3394,69 @@
 
 
 #workskin .ph-av-green { background: #34c759; }
+
+/* === NOVEL-STYLE PROSE UPGRADE (keeps Twitter/WhatsApp/Instagram unchanged) === */
+/* AO3 uses locally available serif fonts; external font loading is not reliable in workskins. */
+#workskin > p,
+#workskin .fic-prose > p {
+  font-family: "Iowan Old Style", "Baskerville", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  font-size: 1.09em;
+  font-weight: normal;
+  line-height: 1.82em;
+  letter-spacing: 0;
+  color: #342b31;
+  margin: 0 auto 1.35em;
+  max-width: 72ch;
+  text-align: left;
+}
+#workskin .fic-online-quote {
+  font-family: "Iowan Old Style", "Baskerville", "Palatino Linotype", Georgia, serif;
+}
+
+
+.chapter-navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    max-width: 850px;
+    margin: 45px auto;
+    padding: 20px;
+}
+
+.nav-btn {
+    display: inline-block;
+    padding: 13px 20px;
+    border-radius: 30px;
+    background: #fce7ee;
+    color: #873e5c;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid #f6c6d7;
+    transition: all 0.2s ease;
+}
+
+.nav-btn:hover {
+    background: #e99ab7;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.home-btn {
+    background: #fffafc;
+}
+
+@media (max-width: 600px) {
+    .chapter-navigation {
+        gap: 8px;
+        padding: 12px;
+    }
+
+    .nav-btn {
+        font-size: 12px;
+        padding: 11px 14px;
+    }
+}
