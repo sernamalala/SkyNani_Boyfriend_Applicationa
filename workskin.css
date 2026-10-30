@@ -2562,7 +2562,7 @@
 }
 
 
-/* Fanfiction-specific additions — the original WhatsApp and Twitter CSS above is unchanged. */
+/* Fanfiction-specific additions â€” the original WhatsApp and Twitter CSS above is unchanged. */
 #workskin .fic-prose > p {
   font-family: Poppins, "Avenir Next", Avenir, "Segoe UI", Helvetica, Arial, sans-serif;
   font-size: 1em;
@@ -2808,7 +2808,7 @@
 }
 
 
-/* CHAPTER ONE — WHATSAPP LAYOUT ONLY
+/* CHAPTER ONE â€” WHATSAPP LAYOUT ONLY
    Add to the END of the existing AO3 workskin.
    This patch does not target Twitter, tweets, replies, icons, or prose.
    It changes no dialogue, timestamps, HTML, or image URLs.
@@ -3009,3 +3009,388 @@
   white-space: nowrap;
   text-overflow: ellipsis;
 }
+
+
+/* FINAL CHAPTER ONLY: additional Instagram, iPhone notification/call designs.
+   Original Twitter / WhatsApp rules and Chapter 1â€“3 HTML remain unchanged. */
+#workskin .fic-inline-photo {max-width:510px;margin:1.2em auto;text-align:center;clear:both;}
+#workskin .fic-inline-photo img {display:block;max-width:100%;height:auto;margin:0 auto;border-radius:9px;}
+#workskin .fic-date-line {text-align:center;font-size:1.04em;letter-spacing:.04em;margin:2em auto 1.4em;}
+#workskin .fic-scene-break {margin:2.2em auto;max-width:65%;clear:both;}
+#workskin .fic-fallback-avatar {width:42px;height:42px;line-height:42px;background:#777;color:white;display:inline-block!important;border-radius:50%;text-align:center;font-weight:bold;font-family:Arial,sans-serif;}
+#workskin .fic-tweet-media img {display:block;max-width:100%;height:auto;margin:10px auto;border-radius:10px;}
+/* Instagram post pattern follows ADDITIONS.txt, each entire post is one HTML line. */
+#workskin .sm-insta-wrap {font:14px/1.45 -apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;box-sizing:border-box;max-width:470px;width:100%;margin:24px auto;clear:both;color:#1d1d1f;overflow:hidden;}
+#workskin .sm-insta-wrap * {box-sizing:border-box;}
+#workskin .sm-insta-post {border:1px solid #e5e5e5;border-radius:9px;background:white;overflow:hidden;color:#1d1d1f;}
+#workskin .sm-insta-header {display:flex;align-items:center;gap:10px;padding:10px 12px;min-height:64px;}
+#workskin .sm-insta-avatar {display:inline-flex!important;align-items:center;justify-content:center;flex:0 0 43px;width:43px;height:43px;border-radius:50%;padding:3px;background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);}
+#workskin .sm-insta-avatar-inner {display:flex!important;align-items:center;justify-content:center;width:100%;height:100%;min-width:0;min-height:0;border-radius:50%;border:2px solid #fff;background:#587da2;color:#fff;font-weight:700;overflow:hidden;}
+#workskin .sm-insta-avatar-inner img {display:block;width:100%;height:100%;object-fit:cover;border-radius:50%;}
+#workskin .sm-insta-userinfo {display:block;min-width:0;flex:1;}
+#workskin .sm-insta-username,#workskin .sm-insta-location {display:block;overflow-wrap:anywhere;}
+#workskin .sm-insta-username {font-weight:700;color:#191919;}
+#workskin .sm-insta-location {font-size:11px;color:#555;}
+#workskin .sm-insta-more {font-weight:700;letter-spacing:2px;font-size:20px;line-height:20px;}
+#workskin .sm-insta-img {width:100%;background:#f2f2f2;}
+#workskin .sm-insta-img img {display:block;width:100%;height:auto;min-height:220px;object-fit:contain;margin:0;max-width:100%;}
+#workskin .sm-insta-img img+img {border-top:3px solid #fff;}
+#workskin .sm-insta-actions {display:flex;align-items:center;gap:17px;padding:8px 12px 2px;font-size:23px;line-height:1.3;}
+#workskin .sm-insta-action {display:inline-block!important;}
+#workskin .sm-insta-save {margin-left:auto;display:inline-block!important;}
+#workskin .sm-insta-likes {font-weight:700;padding:0 12px 7px;}
+#workskin .sm-insta-caption {padding:0 12px 5px;overflow-wrap:anywhere;}
+#workskin .sm-insta-caption p {line-height:1.48!important;margin:0 0 9px!important;}
+#workskin .sm-insta-user,#workskin .sm-insta-comment-user {font-weight:700;}
+#workskin .sm-insta-comments {padding:0 12px 8px;color:#777;font-size:12px;}
+#workskin .sm-insta-timestamp {padding:0 12px 13px;color:#888;text-transform:uppercase;font-size:10px;letter-spacing:.03em;}
+/* Phone baseline styles used by supplied lock-screen and call-log CSS. */
+#workskin .ph-screen-only {width:100%;max-width:380px;margin:22px auto;border:1px solid #d3d3d3;border-radius:18px;overflow:hidden;clear:both;font-family:system-ui,-apple-system,sans-serif;box-sizing:border-box;}
+#workskin .ph-statusbar {height:28px;padding:5px 14px;display:table;width:100%;box-sizing:border-box;background:#f5f5f5;color:#141414;font-size:11px;font-weight:650;}
+#workskin .ph-statusbar-time {display:table-cell;text-align:left;}
+#workskin .ph-statusbar-icons {display:table-cell;text-align:right;}
+#workskin .ph-av-blue {background:#007aff;}
+#workskin .ph-av-purple {background:#af52de;}
+#workskin .ph-av-green {background:#34c759;}
+#workskin .ph-call-log {padding-bottom:8px;}
+#workskin .ph-call-log .ph-call-item {table-layout:auto;}
+#workskin .ph-call-item-info {width:auto;}
+#workskin .ph-call-item-right {width:90px;white-space:nowrap;}
+#workskin .ph-call-item-name {white-space:normal;}
+#workskin .ph-call-item-av {min-width:48px;}
+@media (max-width:480px) { #workskin .sm-insta-wrap {margin:15px auto;} #workskin .ph-screen-only{max-width:100%;} #workskin .fic-inline-photo{max-width:100%;} }
+
+/* Exact user-provided lock-screen CSS */
+#workskin .ph-statusbar-transparent {
+  background: transparent;
+}
+
+
+#workskin .ph-statusbar-transparent .ph-statusbar-time,
+#workskin .ph-statusbar-transparent .ph-statusbar-icons {
+  color: #fff;
+}
+
+
+#workskin .ph-lock {
+  background: linear-gradient(160deg, #1a1a3e 0%, #0d2137 55%, #1a1a1a 100%);
+  color: #fff;
+  padding: 20px 14px 20px;
+  font-family: system-ui, -apple-system, sans-serif;
+  text-align: center;
+}
+
+
+#workskin .ph-lock > br { display: none !important; }
+
+
+#workskin .ph-lock-time {
+  font-size: 3.2em;
+  font-weight: 200;
+  letter-spacing: -3px;
+  line-height: 1;
+  margin-bottom: 4px;
+  display: block;
+}
+
+
+#workskin .ph-lock-date {
+  font-size: 0.88em;
+  font-weight: 400;
+  color: rgba(255,255,255,0.85);
+  display: block;
+  margin-bottom: 18px;
+}
+
+
+#workskin .ph-notif-card {
+  background: rgba(255,255,255,0.16);
+  border-radius: 14px;
+  padding: 10px 14px;
+  margin: 5px 0;
+  text-align: left;
+}
+
+
+#workskin .ph-notif-card-light {
+  background: rgba(255,255,255,0.9);
+}
+
+
+#workskin .ph-notif-hd {
+  display: table;
+  width: 100%;
+  margin-bottom: 3px;
+}
+
+
+#workskin .ph-notif-icon-cell {
+  display: table-cell;
+  width: 22px;
+  vertical-align: middle;
+}
+
+
+#workskin .ph-notif-icon {
+  display: inline-block !important;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  background: #0a84ff;
+  vertical-align: middle;
+}
+
+
+#workskin .ph-notif-icon-green { background: #34c759; }
+#workskin .ph-notif-icon-red { background: #ff3b30; }
+#workskin .ph-notif-icon-pink { background: #fd5068; }
+#workskin .ph-notif-icon-purple { background: #af52de; }
+#workskin .ph-notif-icon-yellow { background: #ffcc00; }
+
+
+#workskin .ph-notif-app {
+  display: table-cell;
+  font-size: 0.68em;
+  font-weight: 600;
+  color: rgba(255,255,255,0.65);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  vertical-align: middle;
+  padding-left: 4px;
+}
+
+
+#workskin .ph-notif-card-light .ph-notif-app {
+  color: #8e8e93;
+}
+
+
+#workskin .ph-notif-time {
+  display: table-cell;
+  font-size: 0.66em;
+  color: rgba(255,255,255,0.5);
+  text-align: right;
+  vertical-align: middle;
+}
+
+
+#workskin .ph-notif-card-light .ph-notif-time {
+  color: #8e8e93;
+}
+
+
+#workskin .ph-notif-title {
+  font-size: 0.82em;
+  font-weight: 600;
+  color: #fff;
+  display: block;
+  margin-bottom: 1px;
+}
+
+
+#workskin .ph-notif-card-light .ph-notif-title {
+  color: #000;
+}
+
+
+#workskin .ph-notif-body {
+  font-size: 0.75em;
+  color: rgba(255,255,255,0.75);
+  display: block;
+  line-height: 1.35;
+}
+
+
+#workskin .ph-notif-card-light .ph-notif-body {
+  color: #3c3c43;
+}
+
+
+#workskin .ph-lock-controls {
+  display: table;
+  width: 100%;
+  margin-top: 22px;
+  padding: 0 8px;
+  box-sizing: border-box;
+}
+
+
+#workskin .ph-lock-ctrl-l {
+  display: table-cell;
+  text-align: left;
+  vertical-align: middle;
+  font-size: 1.6em;
+}
+
+
+#workskin .ph-lock-ctrl-r {
+  display: table-cell;
+  text-align: right;
+  vertical-align: middle;
+  font-size: 1.6em;
+}
+
+
+#workskin .ph-lock-swipe {
+  display: block;
+  text-align: center;
+  font-size: 0.7em;
+  color: rgba(255,255,255,0.5);
+  margin-top: 14px;
+  letter-spacing: 0.04em;
+}
+
+
+#workskin .ph-lock-bar {
+  display: inline-block !important;
+  width: 120px;
+  height: 4px;
+  background: rgba(255,255,255,0.5);
+  border-radius: 2px;
+  margin-top: 8px;
+}
+
+
+@media (max-width: 480px) {
+  #workskin .ph-lock-time {
+    font-size: 2.6em;
+  }
+}
+
+
+
+/* Exact user-provided call log CSS */
+#workskin .ph-call-log {
+  background: #fff;
+  font-family: system-ui, sans-serif;
+}
+
+
+#workskin .ph-call-log-dark {
+  background: #1c1c1e;
+}
+
+
+#workskin .ph-call-log-header {
+  padding: 12px 16px 6px;
+  display: table;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+#workskin .ph-call-log-title {
+  display: table-cell;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #000;
+  vertical-align: middle;
+}
+
+
+#workskin .ph-call-log-dark .ph-call-log-title {
+  color: #fff;
+}
+
+
+#workskin .ph-call-log-edit {
+  display: table-cell;
+  text-align: right;
+  vertical-align: middle;
+  font-size: 0.85em;
+  color: #007aff;
+}
+
+
+#workskin .ph-call-item {
+  display: table;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px 16px;
+  border-bottom: 1px solid #e5e5ea;
+}
+
+
+#workskin .ph-call-log-dark .ph-call-item {
+  border-bottom-color: #3a3a3c;
+}
+
+
+#workskin .ph-call-item-av {
+  display: table-cell;
+  width: 42px;
+  vertical-align: middle;
+}
+
+
+#workskin .ph-call-item-av-circle {
+  display: inline-block !important;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #8e8e93;
+  color: #fff;
+  font-family: system-ui, sans-serif;
+  font-size: 0.88em;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: center;
+}
+
+
+#workskin .ph-call-item-info {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+#workskin .ph-call-item-name {
+  display: block;
+  font-size: 0.88em;
+  font-weight: 500;
+  color: #000;
+}
+
+
+#workskin .ph-call-log-dark .ph-call-item-name {
+  color: #fff;
+}
+
+
+#workskin .ph-call-missed .ph-call-item-name {
+  color: #ff3b30;
+}
+
+
+#workskin .ph-call-item-type {
+  display: block;
+  font-size: 0.7em;
+  color: #8e8e93;
+  margin-top: 1px;
+}
+
+
+#workskin .ph-call-item-right {
+  display: table-cell;
+  text-align: right;
+  vertical-align: middle;
+}
+
+
+#workskin .ph-call-item-time {
+  display: block;
+  font-size: 0.72em;
+  color: #8e8e93;
+  white-space: nowrap;
+}
+
+
+#workskin .ph-call-item-info-icon {
+  display: block;
+  font-size: 0.82em;
+  color: #007aff;
+  margin-top: 3px;
+}
+
+
+#workskin .ph-av-green { background: #34c759; }
